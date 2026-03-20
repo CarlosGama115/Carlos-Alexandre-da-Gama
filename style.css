@@ -73,11 +73,18 @@ header.fixed-top {
 
 /* Hero */
 .hero {
-  background-image: url(./airplane-4974678_1280.jpg);
+  min-height: 100vh;              /* ocupa a tela inteira */
+  background-image: url("./airplane-4974678_1280.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  
-  
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;         /* empilha verticalmente */
+  justify-content: center;        /* centro vertical */
+  align-items: center;            /* centro horizontal */
+
+  text-align: center;
 }
 
 .hero h1 {
