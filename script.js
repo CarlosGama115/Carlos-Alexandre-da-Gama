@@ -195,3 +195,13 @@ window.addEventListener('click', (event) => {
     document.body.style.overflow = 'auto';
   }
 });
+const images = document.querySelectorAll('.profile-img');
+let current = 0;
+
+setInterval(() => {
+  images[current].classList.remove('active');
+  
+  current = (current + 1) % images.length;
+  
+  images[current].classList.add('active');
+}, 5000); // troca a cada 5 segundos
